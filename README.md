@@ -4,13 +4,17 @@
 >
 > A personal AI system for technical thinking, grounded assistance, and long-running project context.
 
+<p align="center">
+  <strong>Private-first.</strong> Memory-aware. Technical. Grounded.
+</p>
+
 FPGA-Mind is a private-first AI assistant project shaped around a simple idea:
 
 **an assistant should not just answer, it should remember context, stay useful across sessions, and help real technical work move forward.**
 
 This public repository is the curated front door for the project. It shares the high-level architecture, setup approach, API style, and security philosophy without exposing private runtime details, internal roadmaps, or local secrets.
 
-## What Makes It Different
+## Why It Hits Different
 
 FPGA-Mind is aimed at a more ambitious target than one-off chat:
 
@@ -21,7 +25,7 @@ FPGA-Mind is aimed at a more ambitious target than one-off chat:
 
 In short: it is designed more like an evolving engineering tool than a prompt demo.
 
-## Why It Exists
+## The Core Bet
 
 Most AI demos look impressive for one prompt.
 
@@ -42,15 +46,24 @@ The result is not meant to be "just another chatbot." It is a personal AI worksp
 - project continuity
 - local control
 
-## At A Glance
+## Highlights
 
 - personal AI assistant
 - continuity-aware design
 - private-first workflow
 - technical and project-oriented use
 - web UI plus backend orchestration
+- curated public docs, private working core
 
-## What This Public Repo Contains
+## Philosophy
+
+- grounded over theatrical
+- continuity over novelty
+- structure over prompt spaghetti
+- privacy over convenience shortcuts
+- useful output over demo polish
+
+## In This Repo
 
 - a polished project overview
 - high-level architecture notes
@@ -58,7 +71,7 @@ The result is not meant to be "just another chatbot." It is a personal AI worksp
 - API response philosophy
 - security and privacy rules
 
-## What It Intentionally Does Not Contain
+## Not In This Repo
 
 - private source code details that should stay internal
 - local memory data
@@ -73,19 +86,31 @@ The result is not meant to be "just another chatbot." It is a personal AI worksp
 - [`docs/API.md`](./docs/API.md)
 - [`docs/SECURITY.md`](./docs/SECURITY.md)
 
-## Design Principles
+## Ideal Use Case
 
-- private-first by default
-- grounded over flashy
-- continuity over one-shot novelty
-- modular growth over monolithic sprawl
-- useful answers over generic demo behavior
+FPGA-Mind is aimed at people who want an assistant that feels less like a disposable chat window and more like a long-running technical workspace.
+
+It is especially aligned with:
+
+- personal AI systems
+- local-first or private-first workflows
+- technical research and engineering assistance
+- projects where continuity matters as much as raw model output
 
 ## Status
 
 This repository is the public-facing documentation layer for FPGA-Mind.
 
 The main working codebase remains private.
+
+## Road Ahead
+
+Future public releases may include:
+
+- selected architecture notes
+- example integrations
+- polished demos
+- open components that are clean to share
 
 ## Contact
 
