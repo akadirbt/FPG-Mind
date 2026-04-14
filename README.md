@@ -1,83 +1,101 @@
 # FPGA-Mind
 
-> Built for continuity, not just completion.
+> Not another "AI that remembers."
 >
-> A personal AI system for technical thinking, grounded assistance, and long-running project context.
+> A private-first technical workspace built to stay grounded, continuity-aware, and actually useful for real engineering work.
 
-<p align="center">
-  <strong>Private-first.</strong> Memory-aware. Technical. Grounded.
-</p>
+FPGA-Mind is not trying to win the usual AI demo game.
 
-FPGA-Mind is a private-first AI assistant project shaped around a simple idea:
+It is not built around:
 
-**an assistant should not just answer, it should remember context, stay useful across sessions, and help real technical work move forward.**
+- louder marketing
+- generic chatbot vibes
+- fake "I remember you" theatrics
+- spraying the same full context into every model call
 
-This public repository is the curated front door for the project. It shares the high-level architecture, setup approach, API style, and security philosophy without exposing private runtime details, internal roadmaps, or local secrets.
+It is built around a stricter idea:
 
-## Why It Hits Different
+**an AI system should behave like a serious technical tool, not a clever improv machine.**
 
-FPGA-Mind is aimed at a more ambitious target than one-off chat:
+## What Makes It Different
 
-- remember what matters
-- stay useful across sessions
-- help with technical work without turning every answer into vague AI fog
-- grow as a system without losing structure
+Most "memory AI" projects stop at:
 
-In short: it is designed more like an evolving engineering tool than a prompt demo.
+- storing chat history
+- retrieving old text
+- wrapping a model with a friendlier persona
 
-## The Core Bet
+FPGA-Mind is aiming at a different layer of quality:
 
-Most AI demos look impressive for one prompt.
+- continuity without losing control
+- grounded behavior instead of confident bluffing
+- clear boundaries between memory, search, and model-only answers
+- private-first workflow instead of cloud-first dependency
+- architecture that can scale without collapsing into prompt spaghetti
 
-FPGA-Mind is built around a harder problem:
+The point is not just to remember.
 
-- continuity across conversations
-- grounded behavior instead of confident guessing
-- technical assistance that stays structured
-- local/private development hygiene
-- a system shape that can grow without turning into chaos
+The point is to **know when to recall, when to search, when to stay deterministic, and when not to pretend.**
 
-The result is not meant to be "just another chatbot." It is a personal AI workspace that blends:
+## The Real Bet
 
-- conversation
-- memory and recall
-- technical help
-- search-aware responses
-- project continuity
-- local control
+The hard problem is not "can an LLM keep context?"
 
-## Highlights
+The hard problem is building a system that can:
 
-- personal AI assistant
-- continuity-aware design
-- private-first workflow
-- technical and project-oriented use
-- web UI plus backend orchestration
-- curated public docs, private working core
+- carry project continuity across sessions
+- help with technical reasoning without becoming vague
+- preserve control over sources and behavior
+- remain modular as complexity grows
+- stay useful in a real personal workflow, not only in benchmark-style prompts
 
-## Philosophy
+That is the bet behind FPGA-Mind.
 
+## Why The Name Matters
+
+The project comes from an engineering mindset.
+
+The same instinct that matters in FPGA and systems work matters here too:
+
+- explicit structure beats magic
+- boundaries matter
+- observability matters
+- correctness matters
+- uncontrolled complexity becomes debt fast
+
+FPGA-Mind applies that mentality to a personal AI system.
+
+## Core Characteristics
+
+- private-first by design
+- technical and project-oriented
+- continuity-aware without overselling "memory"
 - grounded over theatrical
-- continuity over novelty
-- structure over prompt spaghetti
-- privacy over convenience shortcuts
-- useful output over demo polish
+- architecture-minded instead of prompt-hacked
+- built as a long-running system, not a one-shot demo
 
-## In This Repo
+## What This Public Repo Is
 
-- a polished project overview
-- high-level architecture notes
-- local setup guidance
-- API response philosophy
-- security and privacy rules
+This repository is the public-facing documentation layer for FPGA-Mind.
 
-## Not In This Repo
+It shares:
 
-- private source code details that should stay internal
+- the project framing
+- high-level architecture
+- setup philosophy
+- API response style
+- privacy and security posture
+
+## What This Public Repo Is Not
+
+It does not expose:
+
+- the private working codebase
 - local memory data
-- secrets or environment values
-- internal audits, roadmaps, and implementation planning docs
-- machine-specific runtime configuration
+- secrets or machine-local configuration
+- internal audits
+- roadmap internals
+- implementation details that should stay private
 
 ## Public Docs
 
@@ -86,32 +104,22 @@ The result is not meant to be "just another chatbot." It is a personal AI worksp
 - [`docs/API.md`](./docs/API.md)
 - [`docs/SECURITY.md`](./docs/SECURITY.md)
 
-## Ideal Use Case
+## Who It Is For
 
-FPGA-Mind is aimed at people who want an assistant that feels less like a disposable chat window and more like a long-running technical workspace.
+FPGA-Mind is for people interested in AI systems that feel closer to:
 
-It is especially aligned with:
+- a serious technical copilot
+- a private project workspace
+- a continuity-aware engineering tool
 
-- personal AI systems
-- local-first or private-first workflows
-- technical research and engineering assistance
-- projects where continuity matters as much as raw model output
+and less like:
 
-## Status
+- a generic chatbot with a memory badge
+- a cloud wrapper around model calls
+- a prompt demo pretending to be a product
 
-This repository is the public-facing documentation layer for FPGA-Mind.
+## Current Status
 
-The main working codebase remains private.
+The main working repository remains private.
 
-## Road Ahead
-
-Future public releases may include:
-
-- selected architecture notes
-- example integrations
-- polished demos
-- open components that are clean to share
-
-## Contact
-
-If you are interested in the project direction, architecture, or future public releases, this repo is the best place to start.
+This public repo exists to document the philosophy and public-facing shape of the project without leaking the internals that make the private system work.
