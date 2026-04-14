@@ -1,101 +1,77 @@
 # FPGA-Mind
 
-> Not another "AI that remembers."
->
-> A private-first technical workspace built to stay grounded, continuity-aware, and actually useful for real engineering work.
+> A private-first technical AI workspace for grounded assistance, durable project continuity, and real engineering flow.
 
-FPGA-Mind is not trying to win the usual AI demo game.
+`FPGA-Mind` is the public-facing name of the project.
+`Gozde` is the internal assistant persona and working system identity inside the private repo.
 
-It is not built around:
+This project is not centered on the usual "memory AI" pitch.
+Its real focus is building an AI system that behaves like a disciplined engineering tool:
 
-- louder marketing
-- generic chatbot vibes
-- fake "I remember you" theatrics
-- spraying the same full context into every model call
+- continuity-aware across sessions
+- explicit about when to recall, search, or stay deterministic
+- useful for technical work, not just conversational demos
+- modular enough to evolve without collapsing into prompt chaos
 
-It is built around a stricter idea:
+## What FPGA-Mind Actually Tries To Solve
 
-**an AI system should behave like a serious technical tool, not a clever improv machine.**
+The hard part is not storing old messages.
 
-## What Makes It Different
+The hard part is building a system that can:
 
-Most "memory AI" projects stop at:
+- carry technical context across sessions without re-explaining everything
+- separate memory recall from fresh-information search
+- keep grounded answers from turning into confident invention
+- preserve system control as the architecture grows
 
-- storing chat history
-- retrieving old text
-- wrapping a model with a friendlier persona
+In practice, that means handling flows closer to:
 
-FPGA-Mind is aiming at a different layer of quality:
+- continuing a KV260 debugging thread across multiple sessions
+- recalling prior AXI or SystemVerilog discussion without confusing it with fresh web facts
+- switching cleanly between deterministic retrieval, search-backed answers, and model-only reasoning
 
-- continuity without losing control
-- grounded behavior instead of confident bluffing
-- clear boundaries between memory, search, and model-only answers
-- private-first workflow instead of cloud-first dependency
-- architecture that can scale without collapsing into prompt spaghetti
+## Proof Points
 
-The point is not just to remember.
+The current private system already has concrete engineering signals behind it:
 
-The point is to **know when to recall, when to search, when to stay deterministic, and when not to pretend.**
+- a `70-step` adversarial memory/search/cursor/provenance gauntlet in the E2E suite
+- explicit routing boundaries between memory, search, and model-only behavior
+- a local Qwen-centered runtime with bounded use of external higher-tier models for narrower roles
+- a modular backend/frontend structure instead of a single giant prompt wrapper
 
-## The Real Bet
+This public repo does not expose the full private implementation, but it does reflect a real working system rather than a concept page.
 
-The hard problem is not "can an LLM keep context?"
+## Why The Name Fits
 
-The hard problem is building a system that can:
+The project is shaped by an engineering mindset.
 
-- carry project continuity across sessions
-- help with technical reasoning without becoming vague
-- preserve control over sources and behavior
-- remain modular as complexity grows
-- stay useful in a real personal workflow, not only in benchmark-style prompts
+The same instincts that matter in FPGA and systems work matter here too:
 
-That is the bet behind FPGA-Mind.
-
-## Why The Name Matters
-
-The project comes from an engineering mindset.
-
-The same instinct that matters in FPGA and systems work matters here too:
-
-- explicit structure beats magic
 - boundaries matter
 - observability matters
 - correctness matters
-- uncontrolled complexity becomes debt fast
+- structure beats magic
 
-FPGA-Mind applies that mentality to a personal AI system.
+That mindset is a better description of the project than "AI that remembers."
 
 ## Core Characteristics
 
 - private-first by design
-- technical and project-oriented
-- continuity-aware without overselling "memory"
+- continuity-aware without overselling memory
 - grounded over theatrical
+- technical and project-oriented
 - architecture-minded instead of prompt-hacked
 - built as a long-running system, not a one-shot demo
 
-## What This Public Repo Is
+## In This Public Repo
 
-This repository is the public-facing documentation layer for FPGA-Mind.
-
-It shares:
-
-- the project framing
+- project framing
 - high-level architecture
 - setup philosophy
 - API response style
 - privacy and security posture
 
-## What This Public Repo Is Not
-
-It does not expose:
-
-- the private working codebase
-- local memory data
-- secrets or machine-local configuration
-- internal audits
-- roadmap internals
-- implementation details that should stay private
+The private repo, local memory data, secrets, audits, and internal planning docs stay out of this public surface.
 
 ## Public Docs
 
@@ -112,14 +88,10 @@ FPGA-Mind is for people interested in AI systems that feel closer to:
 - a private project workspace
 - a continuity-aware engineering tool
 
-and less like:
+than to a generic chatbot with a memory label attached.
 
-- a generic chatbot with a memory badge
-- a cloud wrapper around model calls
-- a prompt demo pretending to be a product
+## Status
 
-## Current Status
+The main working codebase remains private.
 
-The main working repository remains private.
-
-This public repo exists to document the philosophy and public-facing shape of the project without leaking the internals that make the private system work.
+This public repo exists to document the philosophy, architecture shape, and public-facing identity of the project without leaking the internals that make the private system work.
